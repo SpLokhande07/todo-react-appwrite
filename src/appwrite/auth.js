@@ -61,11 +61,11 @@ export class AuthService {
       return user;
     } catch (error) {
       console.log("Appwrite service :: getCurrentUser :: error ", error);
+      return null;
     }
-    return null;
   }
 }
 
 const authService = new AuthService();
 
-export default new authService();
+export default new AuthService();
