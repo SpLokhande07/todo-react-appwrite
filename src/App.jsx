@@ -15,10 +15,14 @@ function App() {
     authService
       .getCurrentUser()
       .then((userData) => {
-        if (userData) {
-          dispatch(login(userData));
-        } else {
-          dispatch(logout());
+        try {
+          if (userData) {
+            dispatch(login(userData));
+          } else {
+            dispatch(logout());
+          }
+        } catch (err) {
+          console.log("Main App.jsx: error : ", err);
         }
       })
       .finally(() => setLoading(false));

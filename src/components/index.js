@@ -10,12 +10,12 @@ import SignUp from "./SignUp";
 import Login from "./Login";
 import PostForm from "./post-form/PostForm";
 import Postcard from "./Postcard";
+import AuthLayout from "./AuthLayout";
 export {
   Header,
   Footer,
   Logout,
   Container,
-  LogoInput,
   Button,
   Input,
   Logo,
@@ -24,4 +24,5 @@ export {
   Login,
   PostForm,
   Postcard,
+  AuthLayout,
 };
